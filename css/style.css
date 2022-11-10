@@ -33,6 +33,7 @@ body {
 
 .container {
   max-width: 1420px;
+  padding: 0 10px;
   margin: 0 auto;
 }
 
@@ -43,6 +44,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 46px;
+  margin-bottom: 84px;
 }
 .header__about {
   display: flex;
@@ -74,8 +77,6 @@ body {
 }
 
 .nav {
-  margin-top: 46px;
-  margin-bottom: 84px;
   font-weight: 400;
   color: #7D7987;
 }

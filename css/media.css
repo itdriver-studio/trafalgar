@@ -1,0 +1,19 @@
+@media (max-width: 1200px) {
+  .header__about {
+    flex-direction: column;
+  }
+  .header__descr {
+    margin-bottom: 100px;
+  }
+}
+@media (max-width: 750px) {
+  .nav {
+    display: none;
+  }
+}
+.header__top-burger {
+  display: inline-block;
+}
+.header__bg {
+  width: 100%;
+}
