@@ -1,1 +1,82 @@
+@font-face
+  font-family: 'Mulish'
+  src: url('../fonts/Mulish-Bold.woff')format('woff'), url('../fonts/Mulish-Bold.woff2') format('woff2')
+  font-style: normal
+  font-weight: 700
+  font-display: swap
 
+@font-face
+  font-family: 'Mulish'
+  src: url('../fonts/Mulish-Light.woff')format('woff'), url('../fonts/Mulish-Light.woff2') format('woff2')
+  font-style: normal
+  font-weight: 300
+  font-display: swap
+
+@font-face
+  font-family: 'Mulish'
+  src: url('../fonts/Mulish-Regular.woff')format('woff'), url('../fonts/Mulish-Regular.woff2') format('woff2')
+  font-style: normal
+  font-weight: 400
+  font-display: swap
+
+@font-face
+  font-family: 'Mulish'
+  src: url('../fonts/Mulish-SemiBold.woff')format('woff'), url('../fonts/Mulish-SemiBold.woff2') format('woff2')
+  font-style: normal
+  font-weight: 500
+  font-display: swap
+
+body
+  font-family: 'Mulish'
+  font-size: 18px
+
+.container
+  max-width: 1420px
+  margin: 0 auto
+
+.header
+  margin-bottom: 140px
+  &__top
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__about
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__descr
+    max-width: 445px
+    &-title
+      margin-bottom: 45px
+      font-weight: 700
+      font-size: 48px
+      line-height: 56px
+    &-text
+      margin-bottom: 45px
+      color: #7D7987
+      font-size: 21px
+      line-height: 32px
+      font-weight: 300
+    &-link
+      color: #fff
+      font-weight: 700
+      padding: 20px 40px
+      background-color: #458FF6
+      border-radius: 55px
+.nav
+  margin-top: 46px
+  margin-bottom: 84px
+  font-weight: 400
+  color: #7D7987
+
+  &__menu
+    display: flex
+    &-item
+      padding-bottom: 2px
+      border-bottom: 2px solid transparent
+      transition: all .3s
+      &:hover
+        border-bottom: 2px solid #7D7987
+
+    &-item + .nav__menu-item
+      margin-left: 40px
