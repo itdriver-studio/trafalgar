@@ -7,26 +7,47 @@
 
 @media(max-width: 750px)
   .nav
-    position: relative
-    width: 100%
     &__menu
+      color: #fff
       text-align: center
       position: absolute
       flex-direction: column
-      width: 100%
-      top: -30px
-      right: -30px
-      background-color: #f00
+      background-color: #000
+      width: 280px
+      top: -355px
+      right: 0px
+      transition: .5s
+      padding: 40px 10px 10px
+      &::before
+        content: ""
+        width: 30px
+        height: 30px
+        position: absolute
+        right: 5px
+        top: 5px
+        background-image: url(../img/close__icon.svg)
+        background-repeat: no-repeat
       &-item
-        padding: 15px
+        padding-bottom: 15px
+        border: none
+        &:hover
+          border: none
       &-item + .nav__menu-item
         margin-left: 0px
-        margin-top: 20px
+      &-adaptive
+        top: 0px
+        right: 0
+
   .header
+    &__logo
+      // flex-grow: 1
+      // flex-basis: 0
     &__top
       margin-top: 10px
       &-burger
         display: block
-
+        // flex-grow: 1
+        // flex-basis: 0
+        text-align: right
     &__bg
       width: 100%

@@ -7,31 +7,48 @@
   }
 }
 @media (max-width: 750px) {
-  .nav {
-    position: relative;
-    width: 100%;
-  }
   .nav__menu {
+    color: #fff;
     text-align: center;
     position: absolute;
     flex-direction: column;
-    width: 100%;
-    top: -30px;
-    right: -30px;
-    background-color: #f00;
+    background-color: #000;
+    width: 280px;
+    top: -355px;
+    right: 0px;
+    transition: 0.5s;
+    padding: 40px 10px 10px;
+  }
+  .nav__menu::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background-image: url(../img/close__icon.svg);
+    background-repeat: no-repeat;
   }
   .nav__menu-item {
-    padding: 15px;
+    padding-bottom: 15px;
+    border: none;
+  }
+  .nav__menu-item:hover {
+    border: none;
   }
   .nav__menu-item + .nav__menu-item {
     margin-left: 0px;
-    margin-top: 20px;
+  }
+  .nav__menu-adaptive {
+    top: 0px;
+    right: 0;
   }
   .header__top {
     margin-top: 10px;
   }
   .header__top-burger {
     display: block;
+    text-align: right;
   }
   .header__bg {
     width: 100%;
