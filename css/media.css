@@ -3,6 +3,17 @@
     justify-content: space-around;
     padding: 0;
   }
+  .providers__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .providers__descr {
+    order: -1;
+    margin-bottom: 50px;
+  }
+  .providers__img img {
+    width: 100%;
+  }
 }
 @media (max-width: 1200px) {
   .header__about {
