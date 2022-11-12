@@ -32,7 +32,7 @@ body {
 }
 
 .container {
-  max-width: 1420px;
+  max-width: 1320px;
   padding: 0 10px;
   margin: 0 auto;
 }
@@ -74,9 +74,15 @@ body {
 .header__descr-link {
   color: #fff;
   font-weight: 700;
-  padding: 20px 40px;
+  padding: 17px 38px;
   background-color: #458FF6;
   border-radius: 55px;
+  border: 1.4px solid #458FF6;
+  transition: all 0.5s;
+}
+.header__descr-link:hover {
+  color: #458FF6;
+  background-color: #fff;
 }
 
 .nav {
@@ -179,18 +185,26 @@ body {
   font-weight: 300;
   max-width: 261px;
 }
-.services__link-more {
+.services__link {
   text-align: center;
   color: #458FF6;
   font-weight: 700;
 }
-.services__link-more a {
+.services__link-text {
   display: inline-block;
   border: 1.4px solid #458FF6;
-  padding: 20px 50px;
+  padding: 15px 50px;
   border-radius: 55px;
+  transition: all 0.5s;
+}
+.services__link-text:hover {
+  color: #fff;
+  background-color: #458FF6;
 }
 
+.providers {
+  margin-bottom: 240px;
+}
 .providers__wrapper {
   display: flex;
   justify-content: space-between;
@@ -220,9 +234,58 @@ body {
   margin-bottom: 37px;
 }
 .providers__link {
-  padding: 20px 50px;
+  display: inline-block;
+  padding: 15px 50px;
   border: 1.4px solid #458FF6;
   border-radius: 55px;
   font-weight: 700;
   color: #458FF6;
+  transition: all 0.5s;
+}
+.providers__link:hover {
+  color: #fff;
+  background-color: #458FF6;
+}
+
+.download__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.download__text {
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.download__title {
+  max-width: 254px;
+  position: relative;
+  font-size: 36px;
+  line-height: 48px;
+}
+.download__title::before {
+  content: "";
+  position: absolute;
+  width: 56px;
+  height: 2px;
+  background-color: #000;
+  bottom: -30px;
+}
+.download__descr {
+  font-weight: 300;
+  line-height: 30px;
+  color: #7D7987;
+}
+.download__link a {
+  border: 1.4px solid #458FF6;
+  padding: 15px 50px;
+  border-radius: 55px;
+  transition: all 0.5s;
+  display: inline-block;
+  color: #458FF6;
+  font-weight: 700;
+}
+.download__link a:hover {
+  color: #fff;
+  background-color: #458FF6;
 }

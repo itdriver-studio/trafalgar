@@ -34,7 +34,7 @@ body
   font-size: 18px
 
 .container
-  max-width: 1420px
+  max-width: 1320px
   padding: 0 10px
   margin: 0 auto
 
@@ -68,9 +68,14 @@ body
     &-link
       color: #fff
       font-weight: 700
-      padding: 20px 40px
+      padding: 17px 38px
       background-color: #458FF6
       border-radius: 55px
+      border: 1.4px solid #458FF6
+      transition: all .5s
+      &:hover
+        color: $link-color
+        background-color: #fff
 .nav
   font-weight: 400
   color: $font-color
@@ -130,7 +135,6 @@ body
       top: 50%
       transform: translateY(-90%)
       z-index: -1
-
   &__card
     background-color: #fff
     max-width: 350px
@@ -155,16 +159,21 @@ body
       color: $font-color
       font-weight: 300
       max-width: 261px
-  &__link-more
+  &__link
     text-align: center
     color: $link-color
     font-weight: 700
-    & a
+    &-text
       display: inline-block
       border: 1.4px solid $link-color
-      padding: 20px 50px
+      padding: 15px 50px
       border-radius: 55px
+      transition: all .5s
+      &:hover
+        color: #fff
+        background-color: $link-color
 .providers
+  margin-bottom: 240px
   &__wrapper
     display: flex
     justify-content: space-between
@@ -189,8 +198,50 @@ body
     line-height: 30px
     margin-bottom: 37px
   &__link
-    padding: 20px 50px
+    display: inline-block
+    padding: 15px 50px
     border: 1.4px solid $link-color
     border-radius: 55px
     font-weight: 700
     color: $link-color
+    transition: all .5s
+    &:hover
+      color: #fff
+      background-color: $link-color
+.download
+  &__wrapper
+    display: flex
+    justify-content: space-between
+  &__text
+    max-width: 420px
+    display: flex
+    flex-direction: column
+    justify-content: space-evenly
+  &__title
+    max-width: 254px
+    position: relative
+    font-size: 36px
+    line-height: 48px
+    &::before
+      content: ""
+      position: absolute
+      width: 56px
+      height: 2px
+      background-color: #000
+      bottom: -30px
+  &__descr
+    font-weight: 300
+    line-height: 30px
+    color: $font-color
+  &__link
+    & a
+      border: 1.4px solid $link-color
+      padding: 15px 50px
+      border-radius: 55px
+      transition: all .5s
+      display: inline-block
+      color: $link-color
+      font-weight: 700
+      &:hover
+        color: #fff
+        background-color: $link-color

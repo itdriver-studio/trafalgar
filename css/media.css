@@ -14,6 +14,22 @@
   .providers__img img {
     width: 100%;
   }
+  .download__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .download__title {
+    margin-bottom: 50px;
+  }
+  .download__descr {
+    margin-bottom: 37px;
+  }
+  .download__link {
+    margin-bottom: 40px;
+  }
+  .download__img-inner {
+    width: 100%;
+  }
 }
 @media (max-width: 1200px) {
   .header__about {
