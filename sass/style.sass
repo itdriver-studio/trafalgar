@@ -87,7 +87,7 @@ body
 .services
   background-image: url(../img/services__bg.svg)
   background-repeat: no-repeat
-  margin-bottom: 60px
+  margin-bottom: 80px
   &__title
     text-align: center
     font-weight: 700
@@ -160,6 +160,37 @@ body
     color: $link-color
     font-weight: 700
     & a
+      display: inline-block
       border: 1.4px solid $link-color
       padding: 20px 50px
       border-radius: 55px
+.providers
+  &__wrapper
+    display: flex
+    justify-content: space-between
+  &__descr
+    max-width: 486px
+  &__title
+    font-size: 36px
+    line-height: 56px
+    margin-bottom: 60px
+    margin-top: 57px
+    position: relative
+    &::before
+      content: ""
+      position: absolute
+      height: 2px
+      width: 56px
+      background-color: #000
+      bottom: -26px
+  &__text
+    color: $font-color
+    font-weight: 300
+    line-height: 30px
+    margin-bottom: 37px
+  &__link
+    padding: 20px 50px
+    border: 1.4px solid $link-color
+    border-radius: 55px
+    font-weight: 700
+    color: $link-color
