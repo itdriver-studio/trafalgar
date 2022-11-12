@@ -26,6 +26,9 @@
   font-weight: 500
   font-display: swap
 
+$font-color: #7D7987
+$link-color: #458FF6
+
 body
   font-family: 'Mulish'
   font-size: 18px
@@ -58,7 +61,7 @@ body
       line-height: 56px
     &-text
       margin-bottom: 45px
-      color: #7D7987
+      color: $font-color
       font-size: 21px
       line-height: 32px
       font-weight: 300
@@ -70,7 +73,7 @@ body
       border-radius: 55px
 .nav
   font-weight: 400
-  color: #7D7987
+  color: $font-color
   &__menu
     display: flex
     &-item
@@ -81,3 +84,82 @@ body
         border-bottom: 2px solid #7D7987
     &-item + .nav__menu-item
       margin-left: 40px
+.services
+  background-image: url(../img/services__bg.svg)
+  background-repeat: no-repeat
+  margin-bottom: 60px
+  &__title
+    text-align: center
+    font-weight: 700
+    font-size: 36px
+    line-height: 56px
+    margin-bottom: 61px
+    position: relative
+    &::after
+      content: ""
+      position: absolute
+      width: 56px
+      height: 2px
+      background-color: #000
+      bottom: -26px
+      right: 50%
+      transform: translateX(50%)
+  &__text
+    text-align: center
+    line-height: 30px
+    max-width: 952px
+    margin: 0 auto
+    font-weight: 300
+    color: $font-color
+    margin-bottom: 77px
+  &__cards
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    max-width: 1220px
+    padding: 0 50px
+    margin: 0 auto 32px
+    position: relative
+    &::after
+      content: ""
+      width: 131px
+      height: 115px
+      background-image: url(../img/dotted-element.svg)
+      position: absolute
+      right: 0px
+      top: 50%
+      transform: translateY(-90%)
+      z-index: -1
+
+  &__card
+    background-color: #fff
+    max-width: 350px
+    padding: 47px 45px 46px 39px
+    border-radius: 20px
+    margin: 0 10px 37px
+    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4)
+    &-img
+      height: 95px
+      position: relative
+      margin-bottom: 20px
+      & img
+        position: absolute
+        bottom: 0
+    &-title
+      font-weight: 700
+      font-size: 24px
+      line-height: 56px
+    &-text
+      font-size: 16px
+      line-height: 28px
+      color: $font-color
+      font-weight: 300
+      max-width: 261px
+  &__link-more
+    text-align: center
+    color: $link-color
+    font-weight: 700
+    & a
+      border: 1.4px solid $link-color
+      padding: 20px 50px
+      border-radius: 55px
