@@ -284,8 +284,18 @@ body {
   display: inline-block;
   color: #458FF6;
   font-weight: 700;
+  position: relative;
 }
 .download__link a:hover {
   color: #fff;
   background-color: #458FF6;
+}
+.download__link a::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 16px;
+  background-image: url(../img/download-arrow.svg);
+  right: 30px;
+  transform: translateY(30%);
 }

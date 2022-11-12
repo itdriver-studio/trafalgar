@@ -242,6 +242,15 @@ body
       display: inline-block
       color: $link-color
       font-weight: 700
+      position: relative
       &:hover
         color: #fff
         background-color: $link-color
+      &::before
+        content: ""
+        position: absolute
+        width: 10px
+        height: 16px
+        background-image: url(../img/download-arrow.svg)
+        right: 30px
+        transform: translateY(30%)
