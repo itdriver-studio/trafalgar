@@ -1,3 +1,9 @@
+@media (max-width: 1215px) {
+  .services__cards {
+    justify-content: space-around;
+    padding: 0;
+  }
+}
 @media (max-width: 1200px) {
   .header__about {
     flex-direction: column;
