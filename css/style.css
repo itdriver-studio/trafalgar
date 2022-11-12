@@ -247,6 +247,9 @@ body {
   background-color: #458FF6;
 }
 
+.download {
+  margin-bottom: 120px;
+}
 .download__wrapper {
   display: flex;
   justify-content: space-between;
@@ -278,7 +281,7 @@ body {
 }
 .download__link a {
   border: 1.4px solid #458FF6;
-  padding: 15px 50px;
+  padding: 15px 60px 15px 50px;
   border-radius: 55px;
   transition: all 0.5s;
   display: inline-block;
@@ -296,6 +299,29 @@ body {
   width: 10px;
   height: 16px;
   background-image: url(../img/download-arrow.svg);
-  right: 30px;
+  right: 40px;
   transform: translateY(30%);
+}
+
+.customers__inner {
+  background: linear-gradient(208.18deg, #67C3F3 -58.05%, #5A98F2 9.64%);
+  border-radius: 24px;
+  padding: 64px 120px 89px;
+}
+.customers__title {
+  text-align: center;
+  font-size: 36px;
+  line-height: 48px;
+  color: #fff;
+  position: relative;
+}
+.customers__title::before {
+  content: "";
+  position: absolute;
+  width: 56px;
+  height: 2px;
+  background-color: #fff;
+  left: 50%;
+  bottom: -25px;
+  transform: translateX(-50%);
 }
