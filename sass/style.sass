@@ -248,13 +248,14 @@ body
         color: #fff
         background-color: $link-color
       &::before
-        content: ""
+        content: "↓"
         position: absolute
         width: 10px
         height: 16px
-        background-image: url(../img/download-arrow.svg)
-        right: 40px
-        transform: translateY(30%)
+        right: 42px
+        transform: translateY(-10%)
+        &:hover
+          color: #fff
 .customers
   &__inner
     background: linear-gradient(208.18deg, #67C3F3 -58.05%, #5A98F2 9.64%)

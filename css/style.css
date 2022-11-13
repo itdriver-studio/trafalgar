@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Mulish";
   src: url("../fonts/Mulish-Bold.woff") format("woff"), url("../fonts/Mulish-Bold.woff2") format("woff2");
@@ -294,13 +295,15 @@ body {
   background-color: #458FF6;
 }
 .download__link a::before {
-  content: "";
+  content: "↓";
   position: absolute;
   width: 10px;
   height: 16px;
-  background-image: url(../img/download-arrow.svg);
-  right: 40px;
-  transform: translateY(30%);
+  right: 42px;
+  transform: translateY(-10%);
+}
+.download__link a::before:hover {
+  color: #fff;
 }
 
 .customers__inner {
