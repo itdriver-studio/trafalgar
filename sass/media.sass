@@ -50,6 +50,17 @@
       &-descr
         margin: 0
         text-align: center
+    &__inner
+      padding: 20px
+  .slick
+    &-dots
+      bottom: -60px
+  .customers__slider.slick-slider .slick-arrow
+    bottom: -63px
+    &.slick-next
+      transform: translateX(64px)
+    &.slick-prev
+      transform: translateX(-83px)
 @media(max-width: 750px)
   .nav
     &__menu
@@ -82,9 +93,6 @@
       &-adaptive
         top: 0px
         right: 0
-  .customers
-    &__inner
-      padding: 20px
   .header
     &__top
       margin-top: 10px
@@ -93,12 +101,3 @@
         text-align: right
     &__bg
       width: 100%
-  .slick
-    &-dots
-      bottom: -60px
-  .customers__slider.slick-slider .slick-arrow
-    bottom: -63px
-    &.slick-next
-      transform: translateX(64px)
-    &.slick-prev
-      transform: translateX(-83px)
