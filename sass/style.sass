@@ -260,6 +260,8 @@ body
   color: #fff
   margin-bottom: 100px
   &__inner
+    max-width: 1120px
+    margin: 0 auto
     background: linear-gradient(208.18deg, #67C3F3 -58.05%, #5A98F2 9.64%)
     border-radius: 24px
     padding: 64px 120px 89px
@@ -278,6 +280,7 @@ body
       left: 50%
       bottom: -25px
       transform: translateX(-50%)
+  &__slider
   &__slide
     &-wrapper
       display: flex
@@ -333,7 +336,7 @@ body
     justify-content: center
     position: absolute
     left: 50%
-    transform: translateX(-50%)
+    transform: translateX(-56%)
     bottom: -128px
     & button
       font-size: 0
@@ -345,3 +348,72 @@ body
       margin-left: 10px
     li.slick-active button
       background-color: #5B9BF3
+.articles
+  margin-bottom: 200px
+  &__inner
+    background-image: url(../img/articles-bg.png)
+    background-repeat: no-repeat
+    background-position: center right
+  &__title
+    text-align: center
+    font-size: 36px
+    line-height: 56px
+    margin-bottom: 107px
+    position: relative
+    &::before
+      content: ""
+      position: absolute
+      width: 56px
+      height: 2px
+      background-color: #000
+      left: 50%
+      transform: translateX(-50%)
+      bottom: -26px
+  &__cards
+    display: flex
+    justify-content: space-between
+    max-width: 1120px
+    margin: 0 auto 69px
+  &__card
+    background-color: #fff
+    max-width: 350px
+    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4)
+    border-radius: 20px
+    overflow: hidden
+    &-text
+      padding: 24px 43px 35px 33px
+    &-title
+      margin-bottom: 12px
+      font-size: 21px
+      line-height: 32px
+    &-descr
+      margin-bottom: 25px
+      font-weight: 300
+      font-size: 16px
+      line-height: 28px
+      color: $font-color
+      padding-right: 28px
+    &-link
+      color: $link-color
+      position: relative
+      &::after
+        content: ""
+        position: absolute
+        width: 16px
+        height: 11px
+        top: 7px
+        right: -30px
+        background-image: url(../img/articles-arrow.svg)
+        background-repeat: no-repeat
+  &__link
+    text-align: center
+    &-text
+      color: $link-color
+      border: 1.4px solid $link-color
+      border-radius: 55px
+      font-weight: 700
+      padding: 20px 66px
+      transition: .5s
+      &:hover
+        color: #fff
+        background-color: $link-color
