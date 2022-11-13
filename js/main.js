@@ -8,3 +8,7 @@ burger.addEventListener("click", () => {
 navMenu.addEventListener("click", () => {
   navMenu.classList.toggle('nav__menu-adaptive');
 });
+
+$('.customers__slider').slick({
+  dots: true,
+});

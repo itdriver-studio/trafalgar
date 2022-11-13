@@ -257,6 +257,8 @@ body
         &:hover
           color: #fff
 .customers
+  color: #fff
+  margin-bottom: 100px
   &__inner
     background: linear-gradient(208.18deg, #67C3F3 -58.05%, #5A98F2 9.64%)
     border-radius: 24px
@@ -265,8 +267,8 @@ body
     text-align: center
     font-size: 36px
     line-height: 48px
-    color: #fff
     position: relative
+    margin-bottom: 93px
     &::before
       content: ""
       position: absolute
@@ -276,3 +278,70 @@ body
       left: 50%
       bottom: -25px
       transform: translateX(-50%)
+  &__slide
+    &-wrapper
+      display: flex
+      justify-content: space-between
+      align-items: center
+    &-info
+      display: flex
+      align-items: center
+    &-descr
+      line-height: 48px
+      margin-left: 29px
+    &-text
+      max-width: 420px
+      font-size: 19px
+      line-height: 30px
+      font-weight: 300
+  &__name
+    font-weight: 700
+    font-size: 22px
+
+.customers__slider.slick-slider
+  position: relative
+.customers__slider.slick-slider .slick-arrow
+  position: absolute
+  bottom: -132px
+  z-index: 10
+  left: 50%
+  border: none
+  font-size: 0
+  width: 28px
+  height: 18px
+  background-color: #fff
+
+.customers__slider.slick-slider .slick-arrow.slick-next
+  background-image: url(../img/arrow-right.svg)
+  transform: translateX(136px)
+  &:hover
+    background-image: url(../img/arrow-right-hover.svg)
+
+.customers__slider.slick-slider .slick-arrow.slick-prev
+  background-image: url(../img/arrow-left.svg)
+  transform: translateX(-164px)
+  &:hover
+    background-image: url(../img/arrow-left-hover.svg)
+.slick
+  &-track
+    display: flex
+    min-width: 200px
+  &-list
+    overflow: hidden
+  &-dots
+    display: flex
+    justify-content: center
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    bottom: -128px
+    & button
+      font-size: 0
+      width: 10px
+      height: 10px
+      background-color: #cee1fb
+      border: none
+      border-radius: 50%
+      margin-left: 10px
+    li.slick-active button
+      background-color: #5B9BF3

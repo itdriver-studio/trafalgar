@@ -33,6 +33,23 @@
     &__descr
       margin-bottom: 100px
 
+@media(max-width: 1050px)
+  .customers
+    &__slide
+      &-wrapper
+        flex-direction: column
+      &-info
+        display: flex
+        flex-direction: column
+        margin-bottom: 20px
+        justify-content: center
+        align-items: center
+      &-text
+        max-width: 100%
+        text-align: center
+      &-descr
+        margin: 0
+        text-align: center
 @media(max-width: 750px)
   .nav
     &__menu
@@ -65,17 +82,23 @@
       &-adaptive
         top: 0px
         right: 0
-
+  .customers
+    &__inner
+      padding: 20px
   .header
-    &__logo
-      // flex-grow: 1
-      // flex-basis: 0
     &__top
       margin-top: 10px
       &-burger
         display: block
-        // flex-grow: 1
-        // flex-basis: 0
         text-align: right
     &__bg
       width: 100%
+  .slick
+    &-dots
+      bottom: -60px
+  .customers__slider.slick-slider .slick-arrow
+    bottom: -63px
+    &.slick-next
+      transform: translateX(64px)
+    &.slick-prev
+      transform: translateX(-83px)
