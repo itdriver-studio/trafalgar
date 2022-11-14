@@ -518,6 +518,7 @@ body {
 .footer__inner {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .footer__logo {
   margin-bottom: 17px;

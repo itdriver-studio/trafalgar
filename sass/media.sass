@@ -65,6 +65,13 @@
       transform: translateX(64px)
     &.slick-prev
       transform: translateX(-83px)
+@media(max-width: 850px)
+  .footer
+    &__inner
+      // flex-direction: column
+    &__trafalgar
+      max-width: 100%
+      margin-bottom: 40px
 @media(max-width: 750px)
   .nav
     &__menu
@@ -105,3 +112,13 @@
         text-align: right
     &__bg
       width: 100%
+
+@media(max-width: 450px)
+  .footer
+    &__company,
+    &__region,
+    &__help
+      width: 100%
+      align-items: center
+      text-align: center
+      margin-bottom: 40px
