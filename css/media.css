@@ -38,6 +38,12 @@
   .header__descr {
     margin-bottom: 100px;
   }
+  .articles__cards {
+    justify-content: space-evenly;
+  }
+  .articles__card {
+    margin-bottom: 30px;
+  }
 }
 @media (max-width: 1050px) {
   .customers__slide-wrapper {
